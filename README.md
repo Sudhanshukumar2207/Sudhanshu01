@@ -66,7 +66,7 @@ The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and publish
 3. Open the **Actions** tab and wait for the **Deploy to GitHub Pages** workflow to finish.
 4. Visit <https://sudhanshukumar2207.github.io/Sudhanshu01/>.
 
-The site uses the repository path in its Vite configuration so its assets, including the profile photo, resolve correctly on GitHub Pages.
+The site uses the repository path in its Vite configuration so its assets, including the profile photo, resolve correctly on GitHub Pages. Every push to `main` starts a fresh deployment; after changing the Pages source, check that the newest workflow run finishes successfully.
 
 ## Deploy with Vercel
 
