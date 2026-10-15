@@ -92,7 +92,7 @@ function App() {
             <div className="portrait-frame">
               <img
                 className="portrait-photo"
-                src="/sudhanshu-kumar.jpg"
+                src={`${import.meta.env.BASE_URL}sudhanshu-kumar.jpg`}
                 alt="Sudhanshu Kumar"
                 fetchPriority="high"
               />

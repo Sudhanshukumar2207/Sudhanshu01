@@ -57,6 +57,17 @@ Vite writes the optimized website to `dist/`. To preview that build locally, run
 
 Replace the remote URL with the URL of your repository. The `.gitignore` file excludes generated dependencies and build output as well as local environment files.
 
+## Publish on GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and publishes the site whenever changes are pushed to `main`.
+
+1. On GitHub, open **Settings → Pages** for this repository.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
+3. Open the **Actions** tab and wait for the **Deploy to GitHub Pages** workflow to finish.
+4. Visit <https://sudhanshukumar2207.github.io/Sudhanshu01/>.
+
+The site uses the repository path in its Vite configuration so its assets, including the profile photo, resolve correctly on GitHub Pages.
+
 ## Deploy with Vercel
 
 After uploading to GitHub, import the repository in Vercel. Vercel detects Vite automatically; the build command is `npm run build` and the output directory is `dist`. Review the content before publishing, especially the public email address and phone number.
